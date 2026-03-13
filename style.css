@@ -1,0 +1,63 @@
+.gold-glow {
+    text-shadow: 0 0 15px rgba(212, 175, 55, 0.4),
+                 0 0 30px rgba(212, 175, 55, 0.3),
+                 0 0 45px rgba(212, 175, 55, 0.2);
+    color: #d4af37;
+    transition: text-shadow 0.3s ease;
+}
+
+.gold-glow:hover {
+    text-shadow: 0 0 20px rgba(212, 175, 55, 0.6),
+                 0 0 40px rgba(212, 175, 55, 0.4),
+                 0 0 60px rgba(212, 175, 55, 0.2);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.instagram-card {
+    animation: fadeIn 0.6s ease-out forwards;
+    opacity: 0;
+}
+
+.instagram-card:nth-child(1) { animation-delay: 0.1s; }
+.instagram-card:nth-child(2) { animation-delay: 0.2s; }
+.instagram-card:nth-child(3) { animation-delay: 0.3s; }
+.instagram-card:nth-child(4) { animation-delay: 0.4s; }
+.instagram-card:nth-child(5) { animation-delay: 0.5s; }
+.instagram-card:nth-child(6) { animation-delay: 0.6s; }
+.instagram-card:nth-child(7) { animation-delay: 0.7s; }
+.instagram-card:nth-child(8) { animation-delay: 0.8s; }
+
+.instagram-card.reel {
+    position: relative;
+}
+
+.instagram-card.reel img {
+    width: 100%;
+    height: auto;
+    filter: brightness(0.7);
+}
+
+.reel-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    opacity: 0.8;
+}
+
+.reel-overlay i {
+    color: white;
+    font-size: 2rem;
+}
