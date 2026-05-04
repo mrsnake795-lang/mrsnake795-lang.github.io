@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (galleryGrid) {
         const allPosts = await fetchAllPosts();
         if (!allPosts || allPosts.length === 0) {
-            galleryGrid.replaceChildren(createStatusNode('Nenhum post disponível.'));
+            galleryGrid.replaceChildren(createStatusNode('Parte em manutenção'));
             return;
         }
 
